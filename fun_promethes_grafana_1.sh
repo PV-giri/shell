@@ -15,6 +15,7 @@ prometheus() {
 			helm install prometheus prometheus-community/kube-prometheus-stack -n mon
 		fi
 	fi
+	fi
 }
 ### check Namespace existnce or not ###
 kubectl get ns | grep -w mon  >> /dev/null 2>&1
